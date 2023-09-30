@@ -2,6 +2,6 @@
 LICENSE
 
 DS_store
-
+node_modules
 *.txt
 *.zip

@@ -1,0 +1,19 @@
+{
+  "name": "responsive-design-beginners",
+  "version": "1.0.0",
+  "description": "Coder Coder responsive design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vince-M/responsive-design-beginners.git"
+  },
+  "author": "Vince Mendella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vince-M/responsive-design-beginners/issues"
+  },
+  "homepage": "https://github.com/Vince-M/responsive-design-beginners#readme"
+}
