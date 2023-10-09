@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/Vince-M/responsive-design-beginners/issues"
   },
-  "homepage": "https://github.com/Vince-M/responsive-design-beginners#readme"
+  "homepage": "https://github.com/Vince-M/responsive-design-beginners#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.31",
+    "sass": "^1.68.0"
+  }
 }
