@@ -9,11 +9,21 @@ h3 {
 }
 
 h1 {
-	font-size: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40));
+	font-size: u.rem(42); //2.625rem;
+	font-size: clamp(
+		u.rem(42),
+		1.77rem + 3.64vw,
+		u.rem(72)
+	); // 2.625rem <-> 4.5rem
 }
 
 h2 {
-	font-size: clamp(u.rem(28), u.rem(14) + 1.5vw, u.rem(36));
+	font-size: u.rem(36); // 2.25rem
+	font-size: clamp(u.rem(36), 1.91rem + 1.45vw, u.rem(48)); // 2.25rem <-> 3rem
+}
+
+h3 {
+	font-size: u.rem(24);
 }
 
 p {

@@ -18,3 +18,12 @@ body {
 	background-color: var(--background-color);
 	color: var(--text-color);
 }
+
+.visually-hidden {
+	position: absolute;
+	left: u.rem(10000);
+	top: auto;
+	width: u.rem(1);
+	height: u.rem(1);
+	overflow: hidden;
+}

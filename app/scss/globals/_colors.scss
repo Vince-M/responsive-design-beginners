@@ -1,4 +1,22 @@
 :root {
-	--background-color: hsl(0, 0%, 13%); //#202020
-	--text-color: hsl(0, 0%, 100%); //#ffffff
+	--main-bg: hsl(0, 0%, 100%); //#ffffff
+	--text-dark: hsl(233, 14%, 25%); //#383A4A
+	--text-light: hsl(0, 0%, 100%); //#ffffff
+	--hero-bg: hsl(232, 58%, 55%); // #495BCF
+
+	--button-primary-bg: hsl(180, 100%, 42%); // #00D3D4
+	--button-primary-text: hsl(233, 14%, 25%); //#383A4A
+	--button-secondary-bg: transparent;
+	--button-secondary-border: hsl(0, 0%, 100%); //#ffffff
+	--button-secondary-text: hsl(0, 0%, 100%); //#ffffff
+
+	--fullwidth-bg: hsl(320, 85%, 41%); // #BF1085
+}
+
+.magenta {
+	background-color: hsl(300, 100%, 30%);
+}
+
+.green {
+	background-color: hsl(120, 100%, 27%);
 }
