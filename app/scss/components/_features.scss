@@ -1,0 +1,100 @@
+@use '../util' as u;
+
+// Flexbox media queries
+// .features {
+// 	&__wrapper {
+// 		display: flex;
+// 		gap: 40px;
+// 		flex-wrap: wrap;
+// 		justify-content: center;
+
+// 		@include u.breakpoint(large) {
+// 			flex-wrap: nowrap;
+// 			gap: 5.5%;
+// 		}
+// 	}
+
+// 	&__item {
+// 		text-align: center;
+
+// 		@include u.breakpoint(large) {
+// 			flex: 1;
+// 			text-align: left;
+// 		}
+// 	}
+
+.features {
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, u.rem(346)), 1fr));
+		gap: 40px 5.5%;
+		justify-items: center;
+	}
+
+	&__item {
+		text-align: center;
+
+		@include u.breakpoint(large) {
+			text-align: start;
+		}
+	}
+
+	// CSS Grid - responsive
+	// &__wrapper {
+	// 	display: grid;
+	// 	// grid-template-columns: 1fr;
+	// 	grid-auto-flow: row;
+	// 	gap: 40px 5.5%;
+	// 	justify-items: center;
+
+	// 	@include u.breakpoint(large) {
+	// 		grid-auto-flow: column;
+	// 		// grid-template-columns: repeat(3, 1fr);
+	// 	}
+	// }
+
+	// &__item {
+	// 	text-align: center;
+
+	// 	@include u.breakpoint(large) {
+	// 		text-align: start;
+	// 	}
+	// }
+
+	// Flexbox intrinsic
+	// .features {
+	// 	&__wrapper {
+	// 		display: flex;
+	// 		flex-wrap: wrap;
+	// 		justify-content: center;
+	// 		gap: 40px 5.5%;
+	// 	}
+
+	// 	&__item {
+	// 		flex: 0 1 u.rem(346);
+	// 		text-align: center;
+
+	// 		@include u.breakpoint(large) {
+	// 			text-align: left;
+	// 		}
+	// 	}
+
+	&__icon {
+		width: auto;
+		height: u.rem(48);
+		margin-block-end: 10px;
+
+		@include u.breakpoint-down(medium) {
+			margin-inline: auto;
+		}
+	}
+
+	&__title {
+		margin-block-end: u.rem(10);
+	}
+
+	&__description {
+		max-width: 50ch;
+		margin-block-end: 0;
+	}
+}
