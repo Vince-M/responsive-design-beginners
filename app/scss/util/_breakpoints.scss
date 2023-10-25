@@ -7,8 +7,9 @@ $breakpoints-up: (
 	'xlarge': f.em(1440),
 );
 
-// 43.7487em, 56.24875em, 89.99875em
+// 452.98px (flex), 617.98 (grid)  43.7487em, 56.24875em, 89.99875em
 $breakpoints-down: (
+	'xsmall': f.em(452.98),
 	'small': f.em(699.98),
 	'medium': f.em(899.98),
 	'large': f.em(1439.98),
