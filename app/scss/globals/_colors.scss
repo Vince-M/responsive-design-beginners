@@ -5,9 +5,11 @@
 	--header-bg: hsl(232, 58%, 55%); // #495BCF
 	--hero-bg: hsl(232, 58%, 55%); // #495BCF
 
-	--button-primary-bg: hsl(180, 100%, 42%); // #00D3D4
-	--button-primary-bg-hover: hsl(180, 100%, 37%); // #00D3D4
-	--button-primary-text: hsl(233, 14%, 25%); //#383A4A
+	--button-primary-bg: hsl(180, 100%, 42%, 1); // #00D3D4
+	--button-primary-bg-hover: hsl(180, 100%, 37%, 1); // #00D3D4
+	--button-primary-text: hsl(233, 14%, 25%, 1); //#383A4A
+	--button-primary-white-bg: hsl(0, 0%, 100%, 1); //#ffffff;
+	--button-primary-white-bg-hover: hsl(0, 0%, 90%, 1); //#ffffff;
 	--button-secondary-bg: transparent;
 	--button-secondary-bg-hover: hsl(0, 0%, 100%); //#ffffff;
 	--button-secondary-border: hsl(0, 0%, 100%); //#ffffff
@@ -15,6 +17,10 @@
 	--button-secondary-text-hover: var(--hero-bg);
 
 	--fullwidth-bg: hsl(320, 85%, 41%); // #BF1085
+
+	--gradient1: hsl(250, 14%, 25%); // #3B384A
+	--gradient2: hsl(232, 58%, 55%); // #495BCF
+	--gradient3: hsl(180, 100%, 42%); // #00D3D4
 }
 
 .magenta {
