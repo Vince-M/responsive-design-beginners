@@ -31,13 +31,22 @@ blockquote {
 	margin: 0;
 }
 
+header ul,
+footer ul {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style-type: none;
+	}
+}
+
 .visually-hidden {
 	position: absolute;
-	left: u.rem(10000);
+	left: -10000px;
 	top: auto;
-	left: 0;
-	width: u.rem(1);
-	height: u.rem(1);
+	width: 1px;
+	height: 1px;
 	overflow: hidden;
 
 	&:focus {
@@ -47,5 +56,11 @@ blockquote {
 		background-color: #fff;
 		padding: 0.5rem;
 		border: 1px solid;
+	}
+}
+
+.hover-fade {
+	&:hover {
+		opacity: 0.9;
 	}
 }
