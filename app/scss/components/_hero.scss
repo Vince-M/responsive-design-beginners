@@ -1,54 +1,41 @@
 @use '../util' as u;
 
 .hero {
+	--wave-height: clamp(1.3125rem, -0.36363636363636376rem + 7.151515151515151vw, 5rem);
+
 	background-color: var(--hero-bg);
 	color: var(--text-light);
+	padding-block-start: u.rem(40);
 
-	&__wrapper {
-		// display: flex;
-		// flex-direction: column;
+	&__wave {
+		height: var(--wave-height);
+	}
+
+	&__content {
 		display: grid;
-		grid-template-columns: 1fr;
-		align-items: center;
-		gap: 40px;
-		justify-items: center;
-		// align-items: center;
-		padding-block: 30px 60px;
+		margin-block-end: calc(u.rem(60) + var(--wave-height));
+		gap: u.rem(40);
 
 		@include u.breakpoint(large) {
-			// flex-direction: row-reverse;
 			grid-template-columns: 6fr 5fr;
-			padding-block: 40px 60px;
-			gap: 10%;
+			margin-block-end: 0;
 		}
 	}
 
 	&__image {
 		width: 61%;
 		max-width: u.rem(483);
+		justify-self: center;
 
 		@include u.breakpoint(large) {
-			order: 2;
 			width: 100%;
-			// flex: 5;
+			padding-block-start: u.rem(30);
+			order: 2;
+			justify-self: end;
 		}
-		// width: u.rem(200);
-
-		// @include u.breakpoint(large) {
-		// 	width: u.rem(483);
-		// }
 	}
 
 	&__text {
-		@include u.breakpoint(large) {
-			// flex: 6;
-		}
-	}
-
-	&__title {
-	}
-
-	&__content {
 	}
 
 	&__button {
