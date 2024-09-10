@@ -3,18 +3,26 @@ const btnClose = document.querySelector('#btnClose');
 const menuTopNav = document.querySelector('#menuTopNav');
 const breakpoint = window.matchMedia('(width < 43.75em)');
 
-
-if (breakpoint.matches) {
+const setupTopNav = () => {
+  if (breakpoint.matches) {
   console.log('is mobile');
   menuTopNav.setAttribute('inert', '');
+  }
+  else {
+    console.log('is table/desktop');
+    menuTopNav.removeAttribute('inert');
+  }
 }
-else {
-  console.log('is table/desktop');
-  menuTopNav.removeAttribute('inert');
-}
+
+setupTopNav();
 
 btnOpen.addEventListener('click', openMobileMenu);
 btnClose.addEventListener('click', closeMobileMenu);
+
+breakpoint.addEventListener('change', () => {
+  console.log('breakpoint crossed');
+  setupTopNav();
+})
 
 function openMobileMenu() {
   console.log('run openMobileMenu');
@@ -27,5 +35,6 @@ function closeMobileMenu() {
   btnOpen.setAttribute('aria-expanded', 'false');
   menuTopNav.setAttribute('inert', '');
 }
+
 
 console.log(breakpoint);
