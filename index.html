@@ -22,7 +22,9 @@
 		/>
 
 		<link rel="stylesheet" href="dist/style.css" />
+		<script defer src="app/js/bodyScrollLock.min.js"></script>
 		<script defer src="app/js/script.js"></script>
+
 	</head>
 	<a href="#main" class="visually-hidden">Skip to main content</a>
 	<body>
@@ -34,7 +36,7 @@
 				</a>
 				<nav>
 					<span id="nav-label" hidden>Navigation</span>
-					<div class="topnav__overlay"></div>
+					<div id="overlay" class="topnav__overlay"></div>
 
 					<button 
 						id="btnOpen";
@@ -238,7 +240,7 @@
 		</main>
 
 		<!-- footer start -->
-		<footer class="footer">
+		<footer id="footer" class="footer">
 			<h2 class="visually-hidden">Footer</h2>
 			<div class="wrapper footer__wrapper">
 				<section class="footer__logo">

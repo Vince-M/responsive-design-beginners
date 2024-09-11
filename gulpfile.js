@@ -38,13 +38,12 @@ function browsersyncReload(cb) {
 
 // Watch Task
 function watchTask() {
-  watch ('*.html', browsersyncReload);
-  watch ['app/scss/**/*.scss', 'app/**/*.js'],
-  series (scssTask, jsTask, browsersyncReload);
+  watch('*.html', browsersyncReload);
+  watch(
+    ['app/scss/**/*.scss', 'app/**/*.js'],
+    series(scssTask, jsTask, browsersyncReload));
 }
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browsersyncServe, watchTask);
-
-// Build Gulp Task
-exports.build = series(scssTask, jsTask);
+exports.build = scssTask, jsTask;
